@@ -9,103 +9,127 @@ body {
 .wrapper {
 	display: grid;
 	grid-template-areas: 
-	". a b ."
-	". c c ."
-	". d dd ddd"
-	". e e ."
-	". f ff ."
-	". g g ."
-	". h h ."
-	". i i ."
+	"a a a a"
+	"c c c c"
+	"d d d d"
+	"e e e e"
+	"f f f f"
+	"g g g g"
+	"h h h h"
+	"i i i i"
 	"j j j j";
-
-	justify-content: center;
 	text-align: center;
-	
 	height: auto !important;
   	height: 100%;
   	min-height: 100%;
-
   	margin: 0 auto -100px;
 }
 
-.me-photo {
+header {
 	grid-area: a;
+	display: inline-flex;
+	background-color: #2b2d35;
+	justify-content: center;
+	color: #68d678;
 }
 
-header {
-	grid-area: b;
+.me {
+	/*grid-area: a;*/
+	margin: 30px;
+	border-radius: 10px;
+}
+
+.main-header {
+	/*grid-area: b;*/
+	margin-top: 260px;
+	line-height: 30px;
 }
 
 .find-me {
 	grid-area: c;
+	background-color: #68d678;
 }
 
-.github {
+.links {
 	grid-area: d;
-}
-
-.linkedin {
-	grid-area: dd;
-}
-
-.stack {
-	grid-area: ddd;
+	display: inline-flex;
+	justify-content: center;
+	background-color: #68d678;
 }
 
 .about-intro {
 	grid-area: e;
+	line-height: 20px;
+	background-color: #2b2d35;
+	color: #68d678;
 }
-
-.frontend {
+.about-tech {
 	grid-area: f;
+	display: inline-flex;
+	justify-content: center;
+	background-color: #2b2d35;
+	color: #68d678;
 }
 
-.backend {
-	grid-area: ff;
+.fullstack {
+	margin: 20px;
 }
 
 .about-work {
 	grid-area: g;
+	line-height: 20px;
+	background-color: #2b2d35;
+	color: #68d678;
 }
 
 .portfolio {
 	grid-area: h;
+	justify-content: center;
+}
+
+.portfolio-scroll {	
 	overflow: scroll;
-    height: 400px;
-    width: 790px;
+    height: 800px;
 }
 
 .contact {
 	grid-area: i;
+	background-color: #68d678; 
+	padding: 40px;
 }
 
 .main-footer {
 	grid-area: j;
+	padding: 30px;
+	background-color: #2b2d35;
+	color: #68d678;
+	border-top: 2px solid black;
 }
 
+.work {
+	line-height: 30px;
+	
+	margin: 10px;
+	border-radius: 10px;
+}
 
-/*.work {
-	overflow: scroll;
-	width: 500px;
-    height: 315px;
-}*/
+.work:nth-of-type(odd) {
+    background: #cccccc;
+}
 
-
-
-
-
-
-
+.work:nth-of-type(even) {
+    background: #f3f1f1;
+}
 
 .portfolio-photo {
 	max-width: 300px;
 }
 
-.me-photo {
+.me {
 	max-width: 400px;
 }
 
 .link-photo {
 	max-width: 100px;
+	margin: 5px;
 }
