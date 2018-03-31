@@ -146,12 +146,12 @@ a {
 	text-decoration: none;
 	color: black;
 	font-size: 20px;
-	color: blue;
+	color: #25279e;
 }
 
 a:hover {
 	cursor: pointer;
-	color: white;
+	color: #2b2d35;
 }
 
 .portfolio-photo {
